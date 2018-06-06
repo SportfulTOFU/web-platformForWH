@@ -18,7 +18,8 @@
 
 ## 交流 & 提问
 
-https://github.com/SportfulTOFU/web-platformForWH/issues
+- 提问：https://github.com/SportfulTOFU/web-platformForWH/issues
+- QQ：1332890806@qq.com
 
 ## 关于作者
 - 个人主页

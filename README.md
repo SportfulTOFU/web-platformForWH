@@ -12,8 +12,8 @@ npm install
 npm start
 
 ## 快速使用（详细的使用文档或者二次开发文档，外链即可）
-- 使用文档
-- 二次开发文档
+- [使用文档](./doc/use/README.md)
+- [二次开发文档](./doc/dev/README.md)
 
 ## 交流 & 提问
 

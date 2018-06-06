@@ -8,8 +8,9 @@
 
 
 ## 产品安装和下载
-npm install   
-npm start
+- 下载地址 https://github.com/SportfulTOFU/web-platformForWH/releases
+- "npm i web-platformforwh"
+- CDN http://unpkg.com/web-platformforwh/release/bundle.js
 
 ## 快速使用（详细的使用文档或者二次开发文档，外链即可）
 - [使用文档](./doc/use/README.md)

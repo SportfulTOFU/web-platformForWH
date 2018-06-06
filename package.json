@@ -1,6 +1,6 @@
 {
   "name": "web-platformforwh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "网络登录管理平台工具，实现差异化登录（管理员与作业员），多端通信以及数据库操作。（服务于WHKCY）",
   "main": "src/index.js",
   "scripts": {
@@ -32,5 +32,8 @@
     "babel-preset-latest": "^6.24.1",
     "webpack": "^4.11.0",
     "webpack-cli": "^3.0.2"
+  },
+  "dependencies": {
+    "user": "0.0.0"
   }
 }

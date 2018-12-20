@@ -75,7 +75,7 @@ export default {
             let projects
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getprojects", //请求url  
+                    url: "http://47.96.162.249:8081/getprojects", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 })
                 .then(function(response) {
@@ -96,7 +96,7 @@ export default {
                 .then((proj) => {
                     let result = cur.$axios({
                             method: 'post', //请求的方式  
-                            url: "http://localhost:8081/getstate", //请求url  
+                            url: "http://47.96.162.249:8081/getstate", //请求url  
                             params: { username: proj }, //前端向后端传送的数据
                         }).then(function(response) {
                             return response
@@ -131,7 +131,7 @@ export default {
             let cur = this
             let result = await cur.$axios({
                 method: 'post', //请求的方式  
-                url: "http://localhost:8081/getfzrprojects", //请求url  
+                url: "http://47.96.162.249:8081/getfzrprojects", //请求url  
                 params: { username: "hi" }, //前端向后端传送的数据
             })
             let data = result.data
@@ -175,7 +175,7 @@ export default {
             let cur = this;
             cur.$axios({
                     method: 'post',
-                    url: "http://localhost:8081/statusupdate",
+                    url: "http://47.96.162.249:8081/statusupdate",
                     params: { name: cur.username, status: cur.name, projectName: cur.project[cur.flag_pro].name }
                 }).then(function(response) {
                     alert("项目任务进度评价修改成功")

@@ -279,7 +279,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getprojects", //请求url  
+                    url: "http://47.96.162.249:8081/getprojects", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -297,7 +297,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getusers", //请求url  
+                    url: "http://47.96.162.249:8081/getusers", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -315,7 +315,7 @@ export default {
             let cur = this;
             cur.$axios({
                     method: 'post',
-                    url: "http://localhost:8081/getstate1",
+                    url: "http://47.96.162.249:8081/getstate1",
                     params: { username: a },
                 }).then(function(response) {
                     cur.mt = JSON.parse(response.data)
@@ -332,7 +332,7 @@ export default {
             if (1) {}
             cur.$axios({
                     method: 'post',
-                    url: "http://localhost:8081/searchfile",
+                    url: "http://47.96.162.249:8081/searchfile",
                     params: { name: name, property: property },
                 }).then(function(response) {
                     var object = JSON.parse(response.data)
@@ -352,7 +352,7 @@ export default {
             let cur = this;
             cur.$axios({
             method: 'post',
-                url: "http://localhost:8081/stateupdate",
+                url: "http://47.96.162.249:8081/stateupdate",
                 params: { name: cur.name, proname: cur.projects[cur.projects.length - cur.flag_pro].name },
             }).then(function(response) {
                      alert("项目进度修改成功")

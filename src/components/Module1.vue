@@ -207,7 +207,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getusers", //请求url  
+                    url: "http://47.96.162.249:8081/getusers", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -224,7 +224,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getprojects", //请求url  
+                    url: "http://47.96.162.249:8081/getprojects", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -291,7 +291,7 @@ export default {
                 } else {}
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/updatefile2",
+                        url: "http://47.96.162.249:8081/updatefile2",
                         data: formdata,
                     }).then(function(response) {})
                     .catch(function(error) {
@@ -314,7 +314,7 @@ export default {
                 } else {}
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/updatefile2",
+                        url: "http://47.96.162.249:8081/updatefile2",
                         data: formdata,
                     }).then(function(response) { console.log(`未上传${b}文件`); })
                     .catch(function(error) {
@@ -340,7 +340,7 @@ export default {
                 let product = cur.project[cur.flag_pro].product;
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/allupdate1",
+                        url: "http://47.96.162.249:8081/allupdate1",
                         params: {
                             name: name,
                             corp: corp,

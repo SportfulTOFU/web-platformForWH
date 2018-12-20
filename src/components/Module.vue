@@ -248,7 +248,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getusers", //请求url  
+                    url: "http://47.96.162.249:8081/getusers", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -266,7 +266,7 @@ export default {
             let cur = this;
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getprojects", //请求url  
+                    url: "http://47.96.162.249:8081/getprojects", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -322,7 +322,7 @@ export default {
                 } else {}
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/updatefile",
+                        url: "http://47.96.162.249:8081/updatefile",
                         data: formdata,
                     }).then(function(response) {})
                     .catch(function(error) {
@@ -343,7 +343,7 @@ export default {
                 }
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/updatefile",
+                        url: "http://47.96.162.249:8081/updatefile",
                         data: formdata,
                     }).then(function(response) { console.log(`未上传${b}文件`); })
                     .catch(function(error) {
@@ -357,7 +357,7 @@ export default {
             let cur = this;
             this.$axios({
                     method: 'post',
-                    url: 'http://localhost:8081/modify',
+                    url: 'http://47.96.162.249:8081/modify',
                     params: { name: cur.searchname, property: cur.searchproperty, modifyname: cur.modifyname, modifyproperty: cur.modifyproperty }
                 })
                 .then(function(response) {
@@ -403,7 +403,7 @@ export default {
                 let cur = this;
                 cur.$axios({
                         method: 'post',
-                        url: 'http://localhost:8081/allupdate',
+                        url: 'http://47.96.162.249:8081/allupdate',
                         params: {
                             name: cur.name,
                             number: cur.number,
@@ -461,7 +461,7 @@ export default {
             } else {
                 cur.$axios({
                         method: 'post',
-                        url: "http://localhost:8081/loginAddUser",
+                        url: "http://47.96.162.249:8081/loginAddUser",
                         params: { name: cur.login_name, password: cur.login_password, right: cur.login_right },
                         dataType: "json", //数据格式json
                     }).then(function(response) {

@@ -89,7 +89,7 @@ export default {
             let cur = this
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/getprojects", //请求url  
+                    url: "http://47.96.162.249:8081/getprojects", //请求url  
                     params: { username: "hi" }, //前端向后端传送的数据
                 }).then(function(response) {
                     let data = response.data
@@ -126,7 +126,7 @@ export default {
             /*接口请求*/
             cur.$axios({
                     method: 'post', //请求的方式  
-                    url: "http://localhost:8081/downloadfile1", //请求url  
+                    url: "http://47.96.162.249:8081/downloadfile1", //请求url  
                     params: {
                         name: a,
                         projectname: cur.project[cur.flag_pro].name
@@ -135,7 +135,8 @@ export default {
                     if (response.data == 0) {
                         alert("还未上传该类型文件")
                     } else {
-                        var url = `http://localhost:8081/filepath?path=${response.data.path}&name=${response.data.name}`;
+                        var url = `http://47.96.162.249:8081/filepath?path=${response.data.path}&name=${response.data.name}`;
+                         
                         let iframe = document.createElement('iframe')
                         iframe.style.display = 'none'
                         iframe.src = url

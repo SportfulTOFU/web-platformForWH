@@ -57,7 +57,7 @@ export default {
                 /*接口请求*/
                 cur.$axios({
                         method: 'post', //请求的方式  
-                        url: "http://localhost:8081/login", //请求url  
+                        url: "http://47.96.162.249:8081/login", //请求url  
                         params: { username: cur.username, password: cur.password }, //前端向后端传送的数据
                     }).then(function(response) {
                         let data = response.data

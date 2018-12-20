@@ -9,7 +9,6 @@
 <script>
 import { setCookie, getCookie } from './assets/scripts/cookie.js'
 import 'font-awesome/scss/font-awesome.scss'
-
 import './assets/vendor/jquery/jquery.min.js'
 import './assets/vendor/bootstrap/css/bootstrap.min.css'
 import './assets/vendor/linearicons/style.css'
